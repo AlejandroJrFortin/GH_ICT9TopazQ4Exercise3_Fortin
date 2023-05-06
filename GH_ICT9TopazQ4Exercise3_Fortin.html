@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Centimeter to Feet Converter</title>
+
+	<style>
+		
+	#num1 {
+    display: block;
+    width: 400px;
+    
+}
+
+#num2 {
+    display: block;
+    width: 400px;
+    
+}
+
+body {
+	background-color: #c12ef2;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-size: 84px;
+}
+
+p{
+	font-size: 22px;
+}
+
+</style>
+
+</head>
+
+<body>
+<br>
+<center><h1>CENTIMETER-FEET CONVERTER</h1></center>
+
+<br><br><br><br>
+
+<div class="row">
+
+	<div class="col-xl-4"></div>
+
+	
+	<div class="col-xl-4 bg-warning">
+	<br>
+
+	<center><h3>CENTIMETER TO FEET</h3></center>
+
+	<br>
+
+	<center><input type="number" id="num1" placeholder="Measure"> <br></center>
+	<center><input class="btn bg-light" type="submit" value="convert" onclick="myConverterCalculator()"><br></center>
+
+	<br>
+	<center><p id="id1"></p></center>
+
+	
+	</div>
+
+
+	<div class="col-xl-4"></div>
+	
+</div>
+
+	<br><br><br><br><br>
+
+<div class="row">
+
+	<div class="col-xl-4"></div>
+
+	
+	<div class="col-xl-4 bg-warning">
+	<br>
+
+	<center><h3>FEET TO CENTIMETER</h3></center>
+
+	<br>
+
+	<center><input type="number" id="num2" placeholder="Measure"> <br></center>
+	<center><input class="btn bg-light" type="submit" value="convert" onclick="myConverterCalculatorzzz()"><br></center>
+	<br>
+
+	<center><p id="id2"></p></center>
+
+	
+	</div>
+
+
+	<div class="col-xl-4"></div>
+	
+</div>
+
+
+	<script>
+		function myConverterCalculator() {
+			var x = document.getElementById('num1').value;
+			var y = 30.48;
+			var answer = Number(x) / Number(y); 
+			document.getElementById('id1').innerHTML = "Feet:  " + answer; 
+
+		}
+
+			function myConverterCalculatorzzz() {
+			var x = document.getElementById('num2').value;
+			var y = 30.48;
+			var answer = Number(x) * Number(y); 
+			document.getElementById('id2').innerHTML = "Centimeter:  " + answer; 
+		}
+		
+	</script>
+</body>
+</html>
